@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+    background: #f7f7f7;
+    padding-top: 90px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+button {
+    background: #6C63FF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-img {
+    width: 420px;
+}
+
+.servicos {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.titulo-secao {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color:#333;
+}
+
+.cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 18px 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.depoimentos {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.depoimentos-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.depoimento-card {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.2s ease;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.depoimento-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #eee;
+}
+
+.depoimento-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.depoimento-card span {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.depoimento-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contato {
+    padding: 70px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contato-texto {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contato-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.contato-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.contato-form button {
+    width: 100%;
+    background-color: #7a5cff;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contato-form button:hover {
+    background-color: #694be0;
+}
+
+.contato-whatsapp {
+    padding: 20px;
+}
+
+.contato-whatsapp h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14ps 22px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    color: #dcdcdc;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col h3.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-col p {
+   font-size: 15px;
+   color: #bfbfbf;
+   line-height: 1.6; 
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    color: #888;
+    font-size: 14px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 25px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float img {
+    width: 38px;
+    height: 38px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .menu a {
+        margin-left: 12px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .card,
+    .depoimento-card,
+    .contato-form {
+        margin: 0 auto;
+        max-width: 450px;
+    }
+
+    .contato-whatsapp {
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px) {
+    body {
+        padding: 110px;
+    }
+
+    .header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .titulo-secao {
+        font-size: 26px;
+    }
+
+    .footer-col h3.footer-logo {
+        font-size: 20px;
+    }
+}
+
